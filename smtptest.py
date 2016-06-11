@@ -74,7 +74,6 @@ while(True):
         message = message[:-1]
         sys.stdout.write("\b")
         sys.stdout.write(" ")
-        sys.stdout.write("\b")
     """if(bf == 13):
         message += "<br>"
         print("\n")
@@ -106,6 +105,7 @@ try:
 except Exception:
     print("Couldn't send e-mail.")
 
-key = "AESKeyTest"
-getpwd = open("data00.pwd", "r").read()
-print("Password: "+DecodeAES(cipher, spwd))
+if(sav == 1):
+    key = "AESKeyTest"
+    getpwd = open("data00.pwd", "r").read()
+    print("Password: "+DecodeAES(cipher, spwd))
