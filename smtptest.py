@@ -73,26 +73,6 @@ while(True):
     if(bf == 8):
         message = message[:-1]
         sys.stdout.write("\b \b")
-    """if(bf == 13):
-        message += "<br>"
-        print("\n")
-    if(bf == 2 and swb == False):
-        message += "<b>"
-        sw = True
-    elif(bf == 2 and swb == True):
-        message += "</b>"
-        sw = False
-    if(bf == 9 and swi == False):
-        message += "<i>"
-        swi = True
-    elif(bf == 9 and swi == True):
-        message += "</i>"
-        swi = False
-    if(bf == 10):
-        break
-    else:
-        message += chr(bf)
-"""
 
 msg.attach(MIMEText(message, 'html'))
 
