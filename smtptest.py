@@ -72,8 +72,7 @@ while(True):
         break
     if(bf == 8):
         message = message[:-1]
-        #sys.stdout.write("\b".join(" ".join("\b")))
-        bspace = print("\b\b" + chr(32), end = " ")
+        sys.stdout.write("\b \b")
     """if(bf == 13):
         message += "<br>"
         print("\n")
