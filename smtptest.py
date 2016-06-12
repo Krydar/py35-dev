@@ -72,7 +72,7 @@ while(True):
         break
     if(bf == 8):
         message = message[:-1]
-        sys.stdout.write("\b \b")
+        sys.stdout.write("\b \b") #THIS STILL DOESN'T WORK
 
 msg.attach(MIMEText(message, 'html'))
 
